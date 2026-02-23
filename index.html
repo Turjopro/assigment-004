@@ -12,7 +12,7 @@
         <div class="grid grid-cols-3 gap-8 ">
             <div>
                 <p class="bg-green-200 p4">Total</p>
-                <p id="total" class="text-2xl font-bold">8</p>
+                <p id="total" class="text-2xl font-bold">0</p>
             </div>
             <div>
                 <p class="bg-blue-200 p4">Interview</p>
@@ -29,11 +29,11 @@
     <main class="w-[80%] mx-auto mb-4">
         <h2  class="text-3xl font-bold text-black-100">Available Jobs</h2>
         <div class="mb-6">
-            <button class="bg-blue-500 text-white px-10 py-2 p-5" id="all-btn">All</button>
-            <button class="bg-white-500 text-black px-10 py-2 p-5"id="interview-btn">Interview</button>
-            <button class="bg-white-500 text-black px-10 py-2 p-5" id="rejected-btn">Rejected</button>
+            <button onclick="toggleStyle('all-btnn')" class="bg-blue-500 text-white px-10 py-2 p-5" id="all-btnn">All</button>
+            <button onclick="toggleStyle('interview-btn')" class="bg-white-500 text-black px-10 py-2 p-5"id="interview-btn">Interview</button>
+            <button onclick="toggleStyle('rejected-btn')" class="bg-white-500 text-black px-10 py-2 p-5" id="rejected-btn">Rejected</button>
         </div>
-        <section id="all-job">
+        <section id="all-job" class="space-y-6">
             <!-- job 01 -->
             <div class="job flex justify-between border p-8"> 
                 <!-- main part 1 -->
@@ -285,5 +285,6 @@
         </section>
 
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
