@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="w-[80%] mx-auto">
+        <h1 class="text-6xl font-bold text-green-500 ">Job Application Tracker</h1>
+        <div class="grid grid-cols-3 gap-8 ">
+            <div>
+                <p class="bg-green-200 p4">Total</p>
+                <p id="total" class="text-2xl font-bold">8</p>
+            </div>
+            <div>
+                <p class="bg-blue-200 p4">Interview</p>
+                <p id="countInt" class="text-green-500 font-bold text-2xl">0</p>
+            </div>
+            <div>
+                <p class="bg-red-200 p4">Rejected</p>
+                <p id="countRej" class="test-red-500 font-bold text-2xl">0</p>
+            </div>
+        </div>
+    </header>
+
+    <hr class="my-5 mb-6">
+    <main class="w-[80%] mx-auto mb-4">
+        <h2  class="text-3xl font-bold text-black-100">Available Jobs</h2>
+        <div class="mb-6">
+            <button class="bg-blue-500 text-white px-10 py-2 p-5" id="all-btn">All</button>
+            <button class="bg-white-500 text-black px-10 py-2 p-5"id="interview-btn">Interview</button>
+            <button class="bg-white-500 text-black px-10 py-2 p-5" id="rejected-btn">Rejected</button>
+        </div>
+        <section id="all-job">
+            <!-- job 01 -->
+            <div class="job flex justify-between border p-8"> 
+                <!-- main part 1 -->
+                <div class="space-y-6" >
+                    <!-- part 01 -->
+                    <div>
+                        <h3 id="heading" class="font-bold text-2xl">Mobile First Corp</h3>
+                        <p id="job-name">React Native Developer</p>
+                    </div>
+                    <!-- part 02 -->
+                     <div class="flex gap-3">
+                        <p class="bg-gray-200">Remote</p>
+                        <p class="bg-gray-200">• Full-time</p>
+                        <p class="bg-gray-200">•$130,000 - $175,000</p>
+                     </div>
+                     <!-- part 03 -->
+                      
+                        <p class="status text-2xl font-bold">Not Applied</p>
+                        <p class="notes">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <div class="flex gap-3">
+                            <button class="interview-btn bg-green-100 text-green-700 font-bold px-4 py-2">interview</button>
+                            <button class="rejected-btn  bg-red-100 text-green-700 font-bold px-4 py-2 ">Rejected</button>
+                        </div>
+
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <button class="btn-dlt">dlt</button>
+                </div>
+            </div>
+            <!-- job 02 -->
+            <div class="job flex justify-between border p-8"> 
+                <!-- main part 1 -->
+                <div class="space-y-6" >
+                    <!-- part 01 -->
+                    <div>
+                        <h3 id="heading" class="font-bold text-2xl">Mobile First Corp</h3>
+                        <p id="job-name">React Native Developer</p>
+                    </div>
+                    <!-- part 02 -->
+                     <div class="flex gap-3">
+                        <p class="bg-gray-200">Remote</p>
+                        <p class="bg-gray-200">• Full-time</p>
+                        <p class="bg-gray-200">•$130,000 - $175,000</p>
+                     </div>
+                     <!-- part 03 -->
+                      
+                        <p class="status text-2xl font-bold">Not Applied</p>
+                        <p class="notes">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <div class="flex gap-3">
+                            <button class="interview-btn bg-green-100 text-green-700 font-bold px-4 py-2">interview</button>
+                            <button class="rejected-btn  bg-red-100 text-green-700 font-bold px-4 py-2 ">Rejected</button>
+                        </div>
+
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <button class="btn-dlt">dlt</button>
+                </div>
+            </div>
+            <!-- job 03 -->
+            <div class="job flex justify-between border p-8"> 
+                <!-- main part 1 -->
+                <div class="space-y-6" >
+                    <!-- part 01 -->
+                    <div>
+                        <h3 id="heading" class="font-bold text-2xl">Mobile First Corp</h3>
+                        <p id="job-name">React Native Developer</p>
+                    </div>
+                    <!-- part 02 -->
+                     <div class="flex gap-3">
+                        <p class="bg-gray-200">Remote</p>
+                        <p class="bg-gray-200">• Full-time</p>
+                        <p class="bg-gray-200">•$130,000 - $175,000</p>
+                     </div>
+                     <!-- part 03 -->
+                      
+                        <p class="status text-2xl font-bold">Not Applied</p>
+                        <p class="notes">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <div class="flex gap-3">
+                            <button class="interview-btn bg-green-100 text-green-700 font-bold px-4 py-2">interview</button>
+                            <button class="rejected-btn  bg-red-100 text-green-700 font-bold px-4 py-2 ">Rejected</button>
+                        </div>
+
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <button class="btn-dlt">dlt</button>
+                </div>
+            </div>
+            <!-- job 04 -->
+            <div class="job flex justify-between border p-8"> 
+                <!-- main part 1 -->
+                <div class="space-y-6" >
+                    <!-- part 01 -->
+                    <div>
+                        <h3 id="heading" class="font-bold text-2xl">Mobile First Corp</h3>
+                        <p id="job-name">React Native Developer</p>
+                    </div>
+                    <!-- part 02 -->
+                     <div class="flex gap-3">
+                        <p class="bg-gray-200">Remote</p>
+                        <p class="bg-gray-200">• Full-time</p>
+                        <p class="bg-gray-200">•$130,000 - $175,000</p>
+                     </div>
+                     <!-- part 03 -->
+                      
+                        <p class="status text-2xl font-bold">Not Applied</p>
+                        <p class="notes">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <div class="flex gap-3">
+                            <button class="interview-btn bg-green-100 text-green-700 font-bold px-4 py-2">interview</button>
+                            <button class="rejected-btn  bg-red-100 text-green-700 font-bold px-4 py-2 ">Rejected</button>
+                        </div>
+
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <button class="btn-dlt">dlt</button>
+                </div>
+            </div>
+            <!-- job 05 -->
+            <div class="job flex justify-between border p-8"> 
+                <!-- main part 1 -->
+                <div class="space-y-6" >
+                    <!-- part 01 -->
+                    <div>
+                        <h3 id="heading" class="font-bold text-2xl">Mobile First Corp</h3>
+                        <p id="job-name">React Native Developer</p>
+                    </div>
+                    <!-- part 02 -->
+                     <div class="flex gap-3">
+                        <p class="bg-gray-200">Remote</p>
+                        <p class="bg-gray-200">• Full-time</p>
+                        <p class="bg-gray-200">•$130,000 - $175,000</p>
+                     </div>
+                     <!-- part 03 -->
+                      
+                        <p class="status text-2xl font-bold">Not Applied</p>
+                        <p class="notes">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <div class="flex gap-3">
+                            <button class="interview-btn bg-green-100 text-green-700 font-bold px-4 py-2">interview</button>
+                            <button class="rejected-btn  bg-red-100 text-green-700 font-bold px-4 py-2 ">Rejected</button>
+                        </div>
+
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <button class="btn-dlt">dlt</button>
+                </div>
+            </div>
+            <!-- job 06 -->
+            <div class="job flex justify-between border p-8"> 
+                <!-- main part 1 -->
+                <div class="space-y-6" >
+                    <!-- part 01 -->
+                    <div>
+                        <h3 id="heading" class="font-bold text-2xl">Mobile First Corp</h3>
+                        <p id="job-name">React Native Developer</p>
+                    </div>
+                    <!-- part 02 -->
+                     <div class="flex gap-3">
+                        <p class="bg-gray-200">Remote</p>
+                        <p class="bg-gray-200">• Full-time</p>
+                        <p class="bg-gray-200">•$130,000 - $175,000</p>
+                     </div>
+                     <!-- part 03 -->
+                      
+                        <p class="status text-2xl font-bold">Not Applied</p>
+                        <p class="notes">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <div class="flex gap-3">
+                            <button class="interview-btn bg-green-100 text-green-700 font-bold px-4 py-2">interview</button>
+                            <button class="rejected-btn  bg-red-100 text-green-700 font-bold px-4 py-2 ">Rejected</button>
+                        </div>
+
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <button class="btn-dlt">dlt</button>
+                </div>
+            </div>
+            <!-- job 07 -->
+            <div class="job flex justify-between border p-8"> 
+                <!-- main part 1 -->
+                <div class="space-y-6" >
+                    <!-- part 01 -->
+                    <div>
+                        <h3 id="heading" class="font-bold text-2xl">Mobile First Corp</h3>
+                        <p id="job-name">React Native Developer</p>
+                    </div>
+                    <!-- part 02 -->
+                     <div class="flex gap-3">
+                        <p class="bg-gray-200">Remote</p>
+                        <p class="bg-gray-200">• Full-time</p>
+                        <p class="bg-gray-200">•$130,000 - $175,000</p>
+                     </div>
+                     <!-- part 03 -->
+                      
+                        <p class="status text-2xl font-bold">Not Applied</p>
+                        <p class="notes">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <div class="flex gap-3">
+                            <button class="interview-btn bg-green-100 text-green-700 font-bold px-4 py-2">interview</button>
+                            <button class="rejected-btn  bg-red-100 text-green-700 font-bold px-4 py-2 ">Rejected</button>
+                        </div>
+
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <button class="btn-dlt">dlt</button>
+                </div>
+            </div>
+            <!-- job 08 -->
+            <div class="job flex justify-between border p-8"> 
+                <!-- main part 1 -->
+                <div class="space-y-6" >
+                    <!-- part 01 -->
+                    <div>
+                        <h3 id="heading" class="font-bold text-2xl">Mobile First Corp</h3>
+                        <p id="job-name">React Native Developer</p>
+                    </div>
+                    <!-- part 02 -->
+                     <div class="flex gap-3">
+                        <p class="bg-gray-200">Remote</p>
+                        <p class="bg-gray-200">• Full-time</p>
+                        <p class="bg-gray-200">•$130,000 - $175,000</p>
+                     </div>
+                     <!-- part 03 -->
+                      
+                        <p class="status text-2xl font-bold">Not Applied</p>
+                        <p class="notes">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                        <div class="flex gap-3">
+                            <button class="interview-btn bg-green-100 text-green-700 font-bold px-4 py-2">interview</button>
+                            <button class="rejected-btn  bg-red-100 text-green-700 font-bold px-4 py-2 ">Rejected</button>
+                        </div>
+
+                </div>
+
+                <!-- main part 2 -->
+                <div>
+                    <button class="btn-dlt">dlt</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
