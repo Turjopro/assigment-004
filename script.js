@@ -167,3 +167,4 @@ rejectedBtn.addEventListener('click', function () {
         }
     }
 });
+toggleStyle("all-btnn");
