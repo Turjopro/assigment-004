@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body>
+<body class="bg-[#F8FAFC]">
     <header class="w-[80%] mx-auto">
-        <h1 class="text-6xl font-bold text-green-500 ">Job Application Tracker</h1>
+        <h1 class=" text-6xl font-bold ">Job Application Tracker</h1>
         <div class="grid grid-cols-3 gap-8 ">
-            <div>
-                <p class="bg-green-200 p4">Total</p>
+            <div class="bg-white p-4">
+                <p >Total</p>
                 <p id="total" class="text-2xl font-bold">0</p>
             </div>
-            <div>
-                <p class="bg-blue-200 p4">Interview</p>
+            <div class="bg-white p-4">
+                <p>Interview</p>
                 <p id="countInt" class="text-green-500 font-bold text-2xl">0</p>
             </div>
-            <div>
-                <p class="bg-red-200 p4">Rejected</p>
-                <p id="countRej" class="test-red-500 font-bold text-2xl">0</p>
+            <div class="bg-white p-4">
+                <p >Rejected</p>
+                <p id="countRej" class="text-red-500 font-bold text-2xl">0</p>
             </div>
         </div>
     </header>
 
     <hr class="my-5 mb-6">
     <main class="w-[80%] mx-auto mb-4">
-        <h2  class="text-3xl font-bold text-black-100">Available Jobs</h2>
+        <h2  class="text-3xl font-bold text-black-100 mb-[24px]">Available Jobs</h2>
         <div class="mb-6">
             <button onclick="toggleStyle('all-btnn')" class="bg-blue-500 text-white px-10 py-2 p-5" id="all-btnn">All</button>
             <button onclick="toggleStyle('interview-btn')" class="bg-white-500 text-black px-10 py-2 p-5"id="interview-btn">Interview</button>
@@ -35,13 +36,13 @@
         </div>
         <section id="all-job" class="space-y-6">
             <!-- job 01 -->
-            <div class="job flex justify-between border p-8"> 
+            <div class="job flex justify-between bg-white p-8"> 
                 <!-- main part 1 -->
                 <div class="space-y-6" >
                     <!-- part 01 -->
                     <div>
                         <h3 id="heading" class="font-bold text-2xl">Mobile First Corp</h3>
-                        <p id="job-name">React Native Developer</p>
+                        <p >React Native Developer</p>
                     </div>
                     <!-- part 02 -->
                      <div class="flex gap-3">
@@ -54,15 +55,15 @@
                         <p class="status text-2xl font-bold">Not Applied</p>
                         <p class="notes">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
                         <div class="flex gap-3">
-                            <button class="interview-btn bg-green-100 text-green-700 font-bold px-4 py-2">interview</button>
-                            <button class="rejected-btn  bg-red-100 text-green-700 font-bold px-4 py-2 ">Rejected</button>
+                            <button class="interview-btn border border-green-500 text-green-700 font-bold px-4 py-2">interview</button>
+                            <button class="rejected-btn  border border-red-500 text-red-500 font-bold px-4 py-2 ">Rejected</button>
                         </div>
 
                 </div>
 
                 <!-- main part 2 -->
                 <div>
-                    <button class="btn-dlt">dlt</button>
+                    <button class="btn-dlt"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
             <!-- job 02 -->
@@ -93,7 +94,7 @@
 
                 <!-- main part 2 -->
                 <div>
-                    <button class="btn-dlt">dlt</button>
+                    <button class="btn-dlt"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
             <!-- job 03 -->
@@ -124,7 +125,7 @@
 
                 <!-- main part 2 -->
                 <div>
-                    <button class="btn-dlt">dlt</button>
+                    <button class="btn-dlt"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
             <!-- job 04 -->
@@ -155,7 +156,7 @@
 
                 <!-- main part 2 -->
                 <div>
-                    <button class="btn-dlt">dlt</button>
+                    <button class="btn-dlt"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
             <!-- job 05 -->
@@ -186,7 +187,7 @@
 
                 <!-- main part 2 -->
                 <div>
-                    <button class="btn-dlt">dlt</button>
+                    <button class="btn-dlt"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
             <!-- job 06 -->
@@ -217,7 +218,7 @@
 
                 <!-- main part 2 -->
                 <div>
-                    <button class="btn-dlt">dlt</button>
+                    <button class="btn-dlt"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
             <!-- job 07 -->
@@ -248,7 +249,7 @@
 
                 <!-- main part 2 -->
                 <div>
-                    <button class="btn-dlt">dlt</button>
+                    <button class="btn-dlt"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
             <!-- job 08 -->
@@ -279,7 +280,7 @@
 
                 <!-- main part 2 -->
                 <div>
-                    <button class="btn-dlt">dlt</button>
+                    <button class="btn-dlt"><i class="fa-solid fa-trash-can"></i></button>
                 </div>
             </div>
         </section>

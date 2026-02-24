@@ -1,30 +1,27 @@
-let countInting = [];
-let countrejing = [];
 
-let total = document.getElementById('total');
-let countInt = document.getElementById('countInt');
-let countRej = document.getElementById('countRej');
+// dashboard--------->>>>>
 
-const all-btnn = document.getElementById('all-btnn')
-const interview-btn = document.getElementById('interview-btn')
-const rejected-btn = document.getElementById('rejected-btn')
+const total = document.getElementById('total');
+const countInt = document.getElementById('countInt');
+const countRej = document.getElementById('countRej');
 
+const allBtn = document.getElementById('all-btnn');
+const interviewBtn = document.getElementById('interview-btn');
+const rejectedBtn = document.getElementById('rejected-btn');
 
-const alljobsection = document.getElementById('all-job');
-const maincontainer = document.querySelector('main');
-console.log(maincontainer)
+const  allJobSection = document.getElementById('all-job');
 
-function calculatecount(){
-    total.innerText = alljobsection.children.length
-    countInting.innerText = countInt.length
-    countrejing.innertext = countRej.length
+// calculation section ------>>>>
+
+function calculateCount() {
+
+    const allJobs = document.querySelectorAll('.job');
+    const interviewJobs = document.querySelectorAll('.job[data-status="Interview"]');
+    const rejectedJobs = document.querySelectorAll('.job[data-status="Rejected"]');
+
+    total.innerText = allJobs.length;
+    countInt.innerText = interviewJobs.length;
+    countRej.innerText = rejectedJobs.length;
 }
- calculatecount()
 
- function toggleStyle(id){
-    all-btn.classList.remove('bg-blue', ' text-white')
-    interview-btn.classList.remove('bg-blue', ' text-white')
-    rejected-btn.classList.remove('bg-blue', ' text-white')
- 
- }
-
+calculateCount();
