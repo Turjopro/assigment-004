@@ -28,7 +28,12 @@
 
     <hr class="my-5 mb-6">
     <main class="w-[80%] mx-auto mb-4">
-        <h2  class="text-3xl font-bold text-black-100 mb-[24px]">Available Jobs</h2>
+        <div class="flex justify-between items-center mb-[24px]">
+    <h2 class="text-3xl font-bold">Available Jobs</h2>
+    <p class="text-lg font-semibold">
+        <span id="available-count">0</span> Jobs
+    </p>
+</div>
         <div class="mb-6">
             <button onclick="toggleStyle('all-btnn')" class="bg-blue-500 text-white px-10 py-2 p-5" id="all-btnn">All</button>
             <button onclick="toggleStyle('interview-btn')" class="bg-white-500 text-black px-10 py-2 p-5"id="interview-btn">Interview</button>

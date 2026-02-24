@@ -4,6 +4,7 @@
 const total = document.getElementById('total');
 const countInt = document.getElementById('countInt');
 const countRej = document.getElementById('countRej');
+const availableCount = document.getElementById('available-count');
 
 const allBtn = document.getElementById('all-btnn');
 const interviewBtn = document.getElementById('interview-btn');
@@ -22,6 +23,8 @@ function calculateCount() {
     total.innerText = allJobs.length;
     countInt.innerText = interviewJobs.length;
     countRej.innerText = rejectedJobs.length;
+
+    
 }
 
 calculateCount();
@@ -49,6 +52,8 @@ for (let i = 0; i < interviewButtons.length; i++) {
         status.classList.add('text-green-600');
 
         calculateCount();
+        
+        
     });
 
 }
@@ -76,6 +81,7 @@ for (let i = 0; i < rejectedButtons.length; i++) {
         status.classList.add('text-red-500');
 
         calculateCount();
+        
     });
 
 }
@@ -94,6 +100,7 @@ for (let i = 0; i < deleteButtons.length; i++) {
         jobCard.remove();
 
         calculateCount();
+        
     });
 
 }
@@ -107,24 +114,29 @@ for (let i = 0; i < deleteButtons.length; i++) {
 
     const activeBtn = document.getElementById(id);
     activeBtn.classList.add('bg-blue-500', 'text-white');
+
+    const allJobs = document.querySelectorAll('.job');
+    const visibleJobs = document.querySelectorAll('.job:not([style*="display: none"])');
+
+    availableCount.innerText = `Showing ${visibleJobs.length} of ${allJobs.length} jobs`;
 }
 
 // Filter Tab ----->>>>
 
 allBtn.addEventListener('click', function () {
 
-    toggleStyle('all-btnn');
+    
 
     const jobs = document.querySelectorAll('.job');
 
     for (let i = 0; i < jobs.length; i++) {
         jobs[i].style.display = 'flex';
     }
+    toggleStyle('all-btnn');
 });
 interviewBtn.addEventListener('click', function () {
 
-    toggleStyle('interview-btn');
-
+   
     const jobs = document.querySelectorAll('.job');
 
     for (let i = 0; i < jobs.length; i++) {
@@ -135,6 +147,8 @@ interviewBtn.addEventListener('click', function () {
             jobs[i].style.display = 'none';
         }
     }
+     toggleStyle('interview-btn');
+
 });
 
 
